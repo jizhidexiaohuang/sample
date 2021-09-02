@@ -332,7 +332,7 @@ function publish() {
 
 function play(streamId, video) {
   var playVideoCodeType = $('#playVideoCodeType').val();
-  var result = zg.startPlayingStream(streamId, video, null, {
+  var result = zg.startPlayingStream(streamId, video, '', {
     //playType: 'all',
     videoDecodeType: playVideoCodeType ? playVideoCodeType : 'H264'
   });//
